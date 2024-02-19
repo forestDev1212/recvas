@@ -1,0 +1,14 @@
+{
+  "name": "NK Media Recorder",
+  "description": "Record your video, screen, audio etc.",
+  "version": "1.0",
+  "manifest_version": 3,
+  "action": {
+    "default_title": "NK Media Recorder",
+    "default_popup": "index.html",
+    "default_icon": {
+      "16": "logo192.png",
+      "128": "logo192.png"
+    }
+  }
+}
