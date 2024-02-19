@@ -8,6 +8,10 @@ const CustomWebCam = () => {
     const imageSrc = webcamRef.current.getScreenshot();
     setImgSrc(imageSrc);
   }, [webcamRef])
+
+  const retake = () => {
+    setImgSrc(null)
+  }
   return (
     <div className="container">
       {
