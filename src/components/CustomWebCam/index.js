@@ -3,11 +3,13 @@ import Webcam from "react-webcam";
 
 const CustomWebCam = () => {
   const webcamRef = useRef(null);
-  const [imgSrc, setImgSrc] = useState(null);
+  const [imgSrc, setImgSrc] = useState("/logo192.png");
   const [mirrored, setMirrored] = useState(false)
   const capture = useCallback(() => {
+    console.log(webcamRef)
     const imageSrc = webcamRef.current.getScreenshot();
     setImgSrc(imageSrc);
+    console.log(imageSrc)
   }, [webcamRef]);
 
   const retake = () => {
