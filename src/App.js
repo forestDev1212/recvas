@@ -10,7 +10,7 @@ const App = () => {
     <div className='main-body'>
       <CustomWebCam/>
       <ScreenCapture/>
-      <ScreenShot/>
+      {/* <ScreenShot/> */}
     </div>
   )
 }
